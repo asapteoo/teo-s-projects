@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Story Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("IMG_20230311_073832.jpg") ;
+            background-repeat: no-repeat;
+            background-size: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="story-section">
+            <h2>Teo's Bible Stories</h2>
+            <p id="story"></p>
+            <button id="start-quiz-btn">Start Quiz</button>
+            <button id="change-story-btn">Change Story</button> <!-- Add this button -->
+        </div>
+        
+        <div id="quiz-section" style="display: none;">
+            <h2>Quiz</h2>
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="options"></div>
+                <p id="timer"></p>
+            </div>
+            <button id="next-question-btn" style="display: none;">Next Question</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <audio id="audio-player" controls style="display: none;">
+        <source src="audio/noah_story.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
